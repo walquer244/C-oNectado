@@ -72,19 +72,24 @@
         border-radius: 20px;
         text-align: center;
     }
-    .nav > a{
-            text-transform: capitalize;
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s, trasnform 0.2s;
+    .navegacao > a{
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 500px;
+        transition: color 0.3s, trasnform 0.2s;
+        
         }    
-        .nav > a:hover{
-            color: rgb(255, 0, 0);
-            transform: scale(1.05);
-        }
-        .nav .ativo{
-            color: rgb(255, 0, 0);
-            font-weight: bold;
-            border-bottom: 2px solid rgb(255, 0, 0);
-        }
+    .navbar a:hover{
+        color: rgb(255, 0, 0);
+        transform: scale(1.05);
+        border-bottom: rgb(255, 0, 0);
+    }
+    .navegacao .ativo{
+        color: rgb(255, 0, 0);  
+        font-weight: bold;
+        border-bottom: 2px solid rgb(255, 0, 0);
+    }
+    .navegacao:hover {
+    font-size: 30px;
+    }
