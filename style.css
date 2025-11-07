@@ -5,7 +5,8 @@
     }
 
     .navbar{
-        background-color: rgb(0, 174, 255);
+        /* background-color: rgb(0, 174, 255); */
+        background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 174, 255));
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -37,13 +38,13 @@
         display: flex;
         justify-items: center;
         align-items: center;
-    
+        text-align: center;
+        margin: 22px;
     }
     .caes{
         display: flex;
         justify-content: center;
         align-items: center;
-        border: solid black;
         flex-direction: column;
     }
     .caes>img{
@@ -53,5 +54,37 @@
         width: 400px;
         justify-content: center;
         align-items: center;
+        border-radius: 20px;
     }
+     .imagem > img{
+        display: block  ;
+        background-size: 100%;
+        width: 63%;
+        justify-items: center;
+        align-items: center;
     
+    }
+    .container{
+        border: solid black;
+        height: 222px;
+        width: 300px;
+        background-color: transparent;
+        border-radius: 20px;
+        text-align: center;
+    }
+    .nav > a{
+            text-transform: capitalize;
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s, trasnform 0.2s;
+        }    
+        .nav > a:hover{
+            color: rgb(255, 0, 0);
+            transform: scale(1.05);
+        }
+        .nav .ativo{
+            color: rgb(255, 0, 0);
+            font-weight: bold;
+            border-bottom: 2px solid rgb(255, 0, 0);
+        }
