@@ -1,106 +1,116 @@
 * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-    body{
-        background-image: url(https://images.tcdn.com.br/img/img_prod/620948/papel_de_parede_adesivo_pet_shop_patinhas_de_cachorro_e_osso_ssjan_44_225_1_20191104205428.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    .navbar{
-        /* background-color: rgb(0, 174, 255); */
-        background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 174, 255));
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        background-size: 100%;
-        height: 115px;
-        padding: 0px 100px;
-        color: rgb(255, 255, 255);
-        
-    }
+body {
+    background-image: url(https://images.tcdn.com.br/img/img_prod/620948/papel_de_parede_adesivo_pet_shop_patinhas_de_cachorro_e_osso_ssjan_44_225_1_20191104205428.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
 
-    .navbar {
-        display: flex;
-        gap: 10px;
-    }
-    a{
-        color: aliceblue;
-        text-decoration: none;
-        transition: all 0.3s ease;
-    }
-    a:hover{
-        transform: scale(10px);
-        color: rgb(255, 0, 0);
-    }
-    .navegacao{
-        font-size: 22px;
-    }
+.navbar {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 174, 255));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-size: 100%;
+    height: 115px;
+    padding: 0px 100px;
+    color: rgb(255, 255, 255);
 
-    .intro{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        margin: 22px;
+}
 
-    }
-    .caes{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        /* flex-direction: column; */
+.navbar {
+    display: flex;
+    gap: 10px;
+}
 
-    }
-    .caes>img{
-        border: solid black;
-        margin: 22px;
-        height: 350px;
-        width: 400px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 20px;
-    }
-     .imagem > img{
-        display: block  ;
-        background-size: 100%;
-        width: 63%;
-        justify-items: center;
-        align-items: center;
-    
-    }
-    .container{
-        /* border: solid black; */
-        height: 222px;
-        width: 300px;
-        background-color: transparent;
-        border-radius: 20px;
-        text-align: center;
-    }
-    .navegacao > a{
-        text-transform: capitalize;
-        color: white;
-        text-decoration: none;
-        font-weight: 500px;
-        transition: color 0.3s, trasnform 0.2s;
-        
-        }    
-    .navbar a:hover{
-        color: rgb(255, 0, 0);
-        transform: scale(1.05);
-        border-bottom: rgb(255, 0, 0);
-    }
-    .navegacao .ativo{
-        color: rgb(255, 0, 0);  
-        font-weight: bold;
-        border-bottom: 2px solid rgb(255, 0, 0);
-    }
-    .navegacao:hover {
+a {
+    color: aliceblue;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    transform: scale(10px);
+    color: rgb(255, 0, 0);
+}
+
+.navegacao {
+    font-size: 22px;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 22px;
+
+}
+
+.caes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.caes>img {
+    border: solid black;
+    margin: 22px;
+    height: 350px;
+    width: 400px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.imagem>img {
+    display: block;
+    background-size: 100%;
+    width: 63%;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.container {
+    /* border: solid black; */
+    height: 222px;
+    width: 300px;
+    background-color: transparent;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.navegacao>a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 500px;
+    transition: color 0.3s, trasnform 0.2s;
+
+}
+
+.navbar a:hover {
+    color: rgb(255, 0, 0);
+    transform: scale(1.05);
+    border-bottom: rgb(255, 0, 0);
+}
+
+.navegacao .ativo {
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 0, 0);
+}
+
+.navegacao:hover {
     font-size: 30px;
-    }
-    .intro{
-        color: rgb(28, 40, 50);
-    }
+}
+
+.intro {
+    color: rgb(28, 40, 50);
+}
