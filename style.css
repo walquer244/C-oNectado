@@ -84,6 +84,10 @@ a:hover {
     background-color: transparent;
     border-radius: 20px;
     text-align: center;
+    font-size: 29px;
+    margin-left: 222px;
+    margin-top: 80px;
+    color: rgb(0, 0, 0);
 }
 
 .navegacao>a {
@@ -107,9 +111,9 @@ a:hover {
     border-bottom: 2px solid rgb(255, 0, 0);
 }
 
-.navegacao:hover {
+/* .navegacao:hover {
     font-size: 30px;
-}
+} */
 
 .intro {
     color: rgb(28, 40, 50);
