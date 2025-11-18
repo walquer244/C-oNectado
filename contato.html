@@ -4,7 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: solid;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+            width: 22;
+        }
+        .login{
+            align-items: center;
+
+        }
+    </style>
 </head>
 <body>
      <div class="navbar">
@@ -14,6 +29,16 @@
         <div class="navegacao"><a href="">Doenças</a></div>
         <div class="navegacao"><a href="">Cuidados</a></div>
         <div class="navegacao"><a href="contato.html">Contato</a></div>
+    </div>
+    <div class="container">
+        <div class="login">
+            <h1>Contato</h1>
+            <input type="email" placeholder="email" required>
+            <input type="password" placeholder="senha" required>
+            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
+            <button value="senha">Entrar</button>
+        </div>
+        <script src="scripty.js"></script>
     </div>
 </body>
 </html>
