@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,22 +8,37 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
-        .container{
+        .caixa {
             display: flex;
             justify-content: center;
             align-items: center;
             border: solid;
+            text-align: center;
+            background-color: transparent;
+            /* backdrop-filter: blur(100px); */
+            background-image: linear-gradient(to left, rgb(0, 140, 255), white);
+            border-radius: 99px;
+            margin-top: 180px;
+            margin-left: 600px;
             box-shadow: 10px 10px 10px rgb(0, 0, 0);
-            width: 22;
+            width: 500px;
+            height: 450px;
         }
-        .login{
-            align-items: center;
 
+        .login {
+            justify-content: center;
+            align-items: center;
+            margin: 22px;
+        }
+        button{
+            height: 40px;
+            width: 100px;
         }
     </style>
 </head>
+
 <body>
-     <div class="navbar">
+    <div class="navbar">
         <h1>Seja bem vindo ao Cãonectado</h1>
         <div class="navegacao"><a href="quemSomos.html">Home</a></div>
         <div class="navegacao"><a href="index.html">Raças</a></div>
@@ -30,15 +46,23 @@
         <div class="navegacao"><a href="">Cuidados</a></div>
         <div class="navegacao"><a href="contato.html">Contato</a></div>
     </div>
-    <div class="container">
+    <div class="caixa">
         <div class="login">
-            <h1>Contato</h1>
-            <input type="email" placeholder="email" required>
-            <input type="password" placeholder="senha" required>
-            <i class="bi bi-eye-fill" id="btn-senha" onclick="mostrarSenha()"></i>
-            <button value="senha">Entrar</button>
+            <h1>Entre em Contato</h1>
+
+            <form action="enviar.php" method="post">
+                <label for="nome">Nome:</label><br>
+                <input type="text" id="nome" name="nome" required><br><br>
+
+                <label for="email">E-mail:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="telefone">Telefone:</label><br>
+                <input type="tel" id="telefone" name="telefone"><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-        <script src="scripty.js"></script>
-    </div>
 </body>
+
 </html>
