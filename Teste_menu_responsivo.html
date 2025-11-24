@@ -1,0 +1,366 @@
+<!-- <!-- <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsiva</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    nav {
+      background: #000000;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav .logo {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 10px 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background: #444;
+    }
+
+    /* Submenu */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #444;
+      min-width: 150px;
+      flex-direction: column;
+    }
+
+    nav ul li:hover ul {
+      display: block;
+    }
+
+    nav ul li ul li a {
+      padding: 10px;
+    }
+
+    /* Responsivo */
+    .menu-toggle {
+      display: none;
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+      }
+
+      nav ul li {
+        width: 100%;
+      }
+
+      nav ul li ul {
+        position: static;
+      }
+
+      .menu-toggle {
+        display: block;
+        color: #fff;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Seja bem vindo ao Cãonectado</h1>
+    <div class="navegacao"><a href="quemSomos.html">Home</a></div> -->
+    <!-- <ul>
+      <li><a href="#">Home</a></li>
+      <li>
+        <a href="#">Raças<i class="bi bi-chevron-compact-down"></i> </a>
+        <ul>
+          <li class="navegacao"><a href="#">Dogo Argentino</a></li>
+          <li class="navegacao"><a href="#">Cane Corso</a></li>
+          <li class="navegacao"><a href="#">Doberman</a></li>
+          <li class="navegacao"><a href="#">Pitbull</a></li>
+          <li class="navegacao"><a href="#">Kangal</a></li>
+        </ul>
+      </li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    // Script para abrir/fechar menu no mobile
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector("nav ul");
+
+    toggle.addEventListener("click", () => {
+      menu.classList.toggle("active");
+    });
+  </script>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar Responsiva</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #111;
+      color: #fff;
+    }
+
+    /* Navbar */
+    nav {
+      background: #000000;
+      color: #fff;
+      padding: 10px 20px;
+    }
+
+    nav .top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    nav h1 {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+      line-height: 1;
+      user-select: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+    }
+
+    nav ul li {
+      position: relative;
+    }
+
+    nav ul li a {
+      display: flex;
+      align-items: center;
+      gap: 6px; /* espaço entre texto e ícone */
+      padding: 10px 15px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    nav ul li a:hover {
+      background: #222;
+    }
+
+    /* Ícone seta no item "Raças" */
+    .with-icon i {
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    /* Submenu */
+    nav ul li ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: #222;
+      min-width: 180px;
+      flex-direction: column;
+      border: 1px solid #333;
+    }
+
+    nav ul li:hover ul {
+      display: block; /* funciona no desktop (hover) */
+    }
+
+    nav ul li ul li a {
+      padding: 10px 12px;
+      white-space: nowrap;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .menu-toggle {
+        display: block;
+        color: #fff;
+      }
+
+      nav ul {
+        display: none;   /* escondido por padrão no mobile */
+        flex-direction: column;
+        width: 100%;
+        border-top: 1px solid #222;
+      }
+
+      nav ul.active {
+        display: flex;   /* mostrado quando menu recebe .active */
+      }
+
+      nav ul li {
+        width: 100%;
+      }
+
+      /* Submenus no mobile ficam no fluxo, sem posição absoluta */
+      nav ul li ul {
+        position: static;
+        border: none;
+        background: #111;
+      }
+
+      /* Ocultar hover para mobile; usar classe .open via JS */
+      nav ul li:hover ul {
+        display: none;
+      }
+
+      /* Mostrar submenu quando o item recebe .open */
+      nav ul li.open > ul {
+        display: flex;
+      }
+
+      /* Indicador visual de item com submenu no mobile */
+      .submenu-toggle {
+        margin-left: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 28px;
+        height: 28px;
+        border-radius: 4px;
+        background: #222;
+      }
+
+      /* Links do item pai: organizar texto e botão de expandir */
+      .parent-link {
+        justify-content: space-between;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="top">
+      <h1>Seja bem vindo ao Cãonectado</h1>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-menu">☰</button>
+    </div>
+
+    <ul id="main-menu">
+      <li><a href="#">Home</a></li>
+
+      <!-- Item com submenu: Raças -->
+      <li>
+        <!-- Link pai com ícone de seta -->
+        <a href="#" class="parent-link with-icon" aria-haspopup="true" aria-expanded="false">
+          Raças <i class="bi bi-chevron-compact-down"></i>
+        </a>
+        <!-- Botão de expandir (aparece no mobile) -->
+        <span class="submenu-toggle" aria-hidden="true"><i class="bi bi-chevron-down"></i></span>
+
+        <ul>
+          <li class="navegacao"><a href="#">Dogo Argentino</a></li>
+          <li class="navegacao"><a href="#">Cane Corso</a></li>
+          <li class="navegacao"><a href="#">Doberman</a></li>
+          <li class="navegacao"><a href="#">Pitbull</a></li>
+          <li class="navegacao"><a href="#">Kangal</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <script>
+    // Toggle do menu principal (mobile)
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.querySelector("#main-menu");
+
+    toggle.addEventListener("click", () => {
+      const isActive = menu.classList.toggle("active");
+      toggle.setAttribute("aria-expanded", isActive ? "true" : "false");
+    });
+
+    // Submenu "Raças": expandir/colapsar no mobile via clique
+    const submenuParent = menu.querySelector("li:nth-child(2)"); // segundo item (Raças)
+    const parentLink = submenuParent.querySelector(".parent-link");
+    const submenuToggle = submenuParent.querySelector(".submenu-toggle");
+
+    function toggleSubmenu(e) {
+      // Evita navegação do link "#"
+      if (e && e.preventDefault) e.preventDefault();
+      submenuParent.classList.toggle("open");
+      const expanded = submenuParent.classList.contains("open");
+      parentLink.setAttribute("aria-expanded", expanded ? "true" : "false");
+
+      // Alterna o ícone do botão no mobile
+      const icon = submenuToggle.querySelector("i");
+      icon.className = expanded ? "bi bi-chevron-up" : "bi bi-chevron-down";
+    }
+
+    // Clique no botão de expandir (mobile)
+    submenuToggle.addEventListener("click", toggleSubmenu);
+
+    // Opcional: também permitir clique no texto do item pai para expandir
+    parentLink.addEventListener("click", toggleSubmenu);
+  </script>
+
+</body>
+</html>
