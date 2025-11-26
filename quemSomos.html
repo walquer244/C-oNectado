@@ -18,7 +18,7 @@
             gap: 10px;
         }
 
-        
+
 
         .contexto>h1 {
             flex-direction: column;
@@ -40,12 +40,22 @@
             font-size: 22px;
         }
 
-        .banner {
+        .mitos {
+            display: flex;
+            flex-direction: column;
+            gap: 22px;
+            border: 1px solid black;
+            margin-top: 22px;
+            justify-content: center;
+
+        }
+        .fato{
             display: flex;
             justify-content: center;
-            align-items: center;
-            margin-top: px;
-
+            flex-direction: row;
+            height: 280px;
+            width: 222px;
+            border: 1px solid ;
         }
     </style>
 </head>
@@ -73,57 +83,93 @@
     <div class="contexto"> <!--container dos mitos e fatos -->
         <h1>Mitos e Fatos Comuns</h1>
 
-        <h2>Mito: Cães grandes são agressivos por natureza.</h2>
+        <div class="mitos">
+            <h2>Mito: Cães grandes são agressivos por natureza.</h2>
+            <div class="fato">
+                <p>
+                    Fato: O comportamento de um cão, independentemente do seu tamanho, está ligado à sua criação,
+                    socialização e
+                    treinamento, e não à sua raça ou porte. Com a educação e o ambiente certos, cães grandes podem ser
+                    tão
+                    dóceis e tranquilos quanto os de porte pequeno.
+                </p>
+            </div>
+        </div>
+        <div class="mitos">
+            <h2>Mito: Cães grandes precisam de um quintal enorme para viverem felizes.</h2>
+            <div class="fato">
+                <p>
+                    Fato: Isso é falso. Muitos cães de grande porte podem viver bem em apartamentos ou casas menores,
+                    desde
+                    que
+                    recebam a quantidade necessária de exercícios físicos e estímulos mentais diários (como passeios
+                    longos
+                    e
+                    brincadeiras). A qualidade da interação e da rotina é mais importante que o tamanho do espaço
+                    físico.
+                </p>
+            </div>
+        </div>
 
-        <p>
-            Fato: O comportamento de um cão, independentemente do seu tamanho, está ligado à sua criação, socialização e
-            treinamento, e não à sua raça ou porte. Com a educação e o ambiente certos, cães grandes podem ser tão
-            dóceis e tranquilos quanto os de porte pequeno.
+        <div class="mitos">
+            <h2> Mito: Cães grandes são preguiçosos ou calmos.</h2>
+            <div class="fato">
+                <p>
+                    Fato: Embora alguns possam ser mais calmos, muitos cães de grande porte são bastante ativos e
+                    precisam
+                    de
+                    exercícios regulares para se manterem saudáveis e gastar energia. Raças como Golden Retrievers e
+                    Labradores,
+                    por exemplo, são muito enérgicas.
+                </p>
+            </div>
+        </div>
 
-        </p>
+        <div class="mitos">
+            <h2> Mito: Cães grandes precisam de mais comida do que os pequenos.</h2>
+            <div class="fato">
+                <p>
+                    Fato: Eles precisam de uma dieta balanceada e adequada às suas necessidades, mas não necessariamente
+                    comem
+                    mais do que alguns cães menores e muito ativos. A qualidade e o tipo de ração (específica para raças
+                    grandes, que auxilia na saúde articular e óssea) são cruciais, e a quantidade deve ser controlada
+                    por um
+                    veterinário para evitar obesidade.
+                </p>
+            </div>
+        </div>
 
-        <h2>Mito: Cães grandes precisam de um quintal enorme para viverem felizes.</h2>
+        <div class="mitos">
+            <h2> Mito: Cães de raças como Pitbull ou Doberman são naturalmente perigosos.</h2>
+            <div class="fato">
+                <p>
+                    Fato: Nenhuma raça é inerentemente perigosa. A agressividade é uma característica individual moldada
+                    pelo
+                    contexto social e pela criação do animal. O preconceito contra certas raças é comum, mas não se
+                    baseia
+                    em
+                    fatos científicos sobre o temperamento inato dos cães.
+                </p>
+            </div>
+        </div>
 
-        <p>
-            Fato: Isso é falso. Muitos cães de grande porte podem viver bem em apartamentos ou casas menores, desde que
-            recebam a quantidade necessária de exercícios físicos e estímulos mentais diários (como passeios longos e
-            brincadeiras). A qualidade da interação e da rotina é mais importante que o tamanho do espaço físico.
-        </p>
-
-        <h2> Mito: Cães grandes são preguiçosos ou calmos.</h2>
-
-        <p>
-            Fato: Embora alguns possam ser mais calmos, muitos cães de grande porte são bastante ativos e precisam de
-            exercícios regulares para se manterem saudáveis e gastar energia. Raças como Golden Retrievers e Labradores,
-            por exemplo, são muito enérgicas.
-        </p>
-
-        <h2> Mito: Cães grandes precisam de mais comida do que os pequenos.</h2>
-
-        <p>
-            Fato: Eles precisam de uma dieta balanceada e adequada às suas necessidades, mas não necessariamente comem
-            mais do que alguns cães menores e muito ativos. A qualidade e o tipo de ração (específica para raças
-            grandes, que auxilia na saúde articular e óssea) são cruciais, e a quantidade deve ser controlada por um
-            veterinário para evitar obesidade.
-        </p>
-
-        <h2> Mito: Cães de raças como Pitbull ou Doberman são naturalmente perigosos.</h2>
-
-        <p>
-            Fato: Nenhuma raça é inerentemente perigosa. A agressividade é uma característica individual moldada pelo
-            contexto social e pela criação do animal. O preconceito contra certas raças é comum, mas não se baseia em
-            fatos científicos sobre o temperamento inato dos cães.
-        </p>
-
-        <h2>Mito: Cães grandes são mais difíceis de cuidar.</h2>
-
-        <p>
-            Fato: Eles exigem atenção em termos de espaço e cuidados específicos, mas podem ser tão fáceis de cuidar
-            quanto qualquer outro cão se tiverem a rotina e os cuidados (higiene, saúde, exercícios) adequados.
-            A desinformação pode levar a preconceitos e, em casos extremos, ao abandono de animais. É fundamental buscar
-            informações com profissionais qualificados, como veterinários e adestradores, para garantir o bem-estar de
-            qualquer cão, independentemente do seu porte.
-        </p>
+        <div class="mitos">
+            <h2>Mito: Cães grandes são mais difíceis de cuidar.</h2>
+            <div class="fato">
+                <p>
+                    Fato: Eles exigem atenção em termos de espaço e cuidados específicos, mas podem ser tão fáceis de
+                    cuidar
+                    quanto qualquer outro cão se tiverem a rotina e os cuidados (higiene, saúde, exercícios) adequados.
+                    A desinformação pode levar a preconceitos e, em casos extremos, ao abandono de animais. É
+                    fundamental
+                    buscar
+                    informações com profissionais qualificados, como veterinários e adestradores, para garantir o
+                    bem-estar
+                    de
+                    qualquer cão, independentemente do seu porte.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 
