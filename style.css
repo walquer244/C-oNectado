@@ -1,3 +1,5 @@
+/* ----------CONFIGURAÇAO INICIAL------------------ */
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +7,14 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-/* plano de fundo de todas as paginas */
+/* ---------PLANO DE FUNDO DE TODAS AS PAGINAS------------ */
 body {
     background-image: url(https://images.tcdn.com.br/img/img_prod/620948/papel_de_parede_adesivo_pet_shop_patinhas_de_cachorro_e_osso_ssjan_44_225_1_20191104205428.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-/* confifuracao da navbar em todas as paginas  */
+/* --------------------CONFIGURAÇÃO DA NAVBAR DE TODAS AS PAGINAS-------------------  */
 .navbar {
     background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(0, 174, 255));
     display: flex;
@@ -44,16 +46,8 @@ a:hover {
 .navegacao {
     font-size: 22px;
 }
+
 /* COMEÇO INDEX */
-.intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 22px;
-
-}
-
 .caes {
     display: flex;
     justify-content: center;
@@ -61,7 +55,7 @@ a:hover {
     flex-wrap: wrap;
 }
 
-.caes>img {
+.Dog>img {
     border: solid black;
     margin: 22px;
     height: 350px;
@@ -92,32 +86,6 @@ a:hover {
     color: rgb(0, 0, 0);
 }
 
-/* .navegacao>a {
-    text-transform: capitalize;
-    color: white;
-    text-decoration: none;
-    font-weight: 500px;
-    transition: color 0.3s, trasnform 0.2s;
-
-}
-
-.navbar a:hover {
-    color: rgb(255, 0, 0);
-    transform: scale(1.05);
-    border-bottom: rgb(255, 0, 0);
-}
-
-.navegacao .ativo {
-    color: rgb(255, 0, 0);
-    font-weight: bold;
-    border-bottom: 2px solid rgb(255, 0, 0);
-} */
-
-.intro {
-    color: rgb(28, 40, 50);
-}
-
-
 .descricao {
     display: flex;
     justify-content: center;
@@ -126,7 +94,7 @@ a:hover {
     text-align: center;
 }
 
-/* COMEÇO QUEMSOMOS*/
+/* ------COMEÇO QUEMSOMOS---------*/
 
 .introducao {
     display: flex;
@@ -160,4 +128,3 @@ a:hover {
 .contexto>p {
     font-size: 22px;
 }
-

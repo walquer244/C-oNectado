@@ -1,4 +1,4 @@
-<script>
+{/* <script>
     // Toggle do menu principal (mobile)
     const toggle = document.querySelector(".menu-toggle");
     const menu = document.querySelector("#main-menu");
@@ -30,4 +30,4 @@
 
     // Opcional: também permitir clique no texto do item pai para expandir
     parentLink.addEventListener("click", toggleSubmenu);
-  </script>
+  </script> */}
