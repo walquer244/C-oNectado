@@ -47,7 +47,7 @@ a:hover {
     font-size: 22px;
 }
 
-/* COMEÇO INDEX */
+/*---------------- COMEÇO INDEX---------------------- */
 .caes {
     display: flex;
     justify-content: center;
@@ -94,7 +94,7 @@ a:hover {
     text-align: center;
 }
 
-/* -------------COMEÇO QUEMSOMOS-------------*/
+/* -----------------------COMEÇO QUEMSOMOS-------------------------------*/
 
 .introducao {
     display: flex;
@@ -128,3 +128,15 @@ a:hover {
 .contexto>p {
     font-size: 22px;
 }
+/* ---------- --------------COMEÇO DOENÇAS----------------------- */
+
+
+
+/* --------------------------COMEÇO CUIDADOS------------------------ */
+
+
+
+/* --------------------------- COMEÇO CONTATO------------------------- */
+
+
+/* ----------------------------COMEÇO INSPIRAÇÕES---------------------- */

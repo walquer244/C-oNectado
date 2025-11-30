@@ -1,33 +1,17 @@
-{/* <script>
-    // Toggle do menu principal (mobile)
-    const toggle = document.querySelector(".menu-toggle");
-    const menu = document.querySelector("#main-menu");
+let botoes = document.querySelectorAll(".botao");
 
-    toggle.addEventListener("click", () => {
-      const isActive = menu.classList.toggle("active");
-      toggle.setAttribute("aria-expanded", isActive ? "true" : "false");
-    });
+botoes.forEach(function (botao) {
+  botao.addEventListener("click", function () {
+    let item = botao.closest(".item");
+    let infor = item.querySelector(".infor");
+    let icone = botao.querySelector(".icone");
 
-    // Submenu "Raças": expandir/colapsar no mobile via clique
-    const submenuParent = menu.querySelector("li:nth-child(2)"); // segundo item (Raças)
-    const parentLink = submenuParent.querySelector(".parent-link");
-    const submenuToggle = submenuParent.querySelector(".submenu-toggle");
-
-    function toggleSubmenu(e) {
-      // Evita navegação do link "#"
-      if (e && e.preventDefault) e.preventDefault();
-      submenuParent.classList.toggle("open");
-      const expanded = submenuParent.classList.contains("open");
-      parentLink.setAttribute("aria-expanded", expanded ? "true" : "false");
-
-      // Alterna o ícone do botão no mobile
-      const icon = submenuToggle.querySelector("i");
-      icon.className = expanded ? "bi bi-chevron-up" : "bi bi-chevron-down";
+    if (conteudo.classList.contains("aberto")) {
+      conteudo.classList.remove("aberto");
+      icone.classList.remove("rotated");
+    } else {
+      conteudo.classList.add("aberto");
+      icone.classList.add("rotated");
     }
-
-    // Clique no botão de expandir (mobile)
-    submenuToggle.addEventListener("click", toggleSubmenu);
-
-    // Opcional: também permitir clique no texto do item pai para expandir
-    parentLink.addEventListener("click", toggleSubmenu);
-  </script> */}
+  })
+})
