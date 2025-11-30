@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
     <link rel="stylesheet" href="style.css">
     <script src="scripty.js"></script>
     <style>
@@ -31,8 +33,8 @@
 
         .item {
             border-radius: 20px;
-            border: 2px solid transparent;
-            background: linear-gradient(black, black) padding-box linear-gradient(45deg black, rgb(0, 174, 255)) border-box;
+            /* border: 2px solid transparent;
+            background: linear-gradient(black, black) padding-box linear-gradient(45deg black, rgb(0, 174, 255)) border-box; */
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -76,9 +78,16 @@
         }
 
         .botao {
-            background: none;
+            background-color: rgb(9, 135, 189);
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
             border: none;
             cursor: pointer;
+        }
+
+        .botao>i {
+            color: white;
             font-size: 24px;
         }
 
@@ -111,7 +120,9 @@
                 <img src="Aquiles.jpg" alt="">
                 <div class="fotos">
                     <h2>Aquiles</h2>
-                    <button class="botao"><i class="bi bi-chevron-down"></i></button>
+                    <button class="botao">
+                        <i class="icone fa-solid fa-angle-down"></i>
+                    </button>
                 </div>
                 <div class="infor">
                     <p>
@@ -123,6 +134,27 @@
 
         </div>
     </section>
+
+    <script>
+        let botoes = document.querySelectorAll(".botao");
+
+        botoes.forEach(function (botao) {
+            botao.addEventListener("click", function () {
+
+                let item = botao.closest(".item");
+                let infor = item.querySelector(".infor");
+                let icone = botao.querySelector(".icone");
+
+                if (infor.classList.contains("aberto")) {
+                    infor.classList.remove("aberto");
+                    icone.classList.remove("rotated");
+                } else {
+                    infor.classList.add("aberto");
+                    icone.classList.add("rotated");
+                }
+            })
+        });
+    </script>
 
 </body>
 
