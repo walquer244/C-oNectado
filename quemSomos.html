@@ -26,44 +26,36 @@
             align-items: center;
             text-align: center;
             gap: 10px;
-
         }
 
-        .contexto>h2 {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            margin: 22px 0px 3px;
-        }
 
-        .contexto>p {
-            font-size: 22px;
-        }
-
-        .banner {
+        .mitos {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top: px;
-
-        }
-        .mitos{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid black;
+            flex-wrap: wrap;
             margin-top: 10px;
             width: 500px;
             margin-left: 600px;
-            
+            padding: 22px;
+            box-shadow: 10px 10px 10px rgb(0, 0, 0);
+            border-radius: 20px;
+            background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 115, 255));
+            color: rgb(193, 193, 209);
+        }
+        .banner >img{
+            display: flex;
+            justify-content: center;
+            height: 700px;
+            margin-left: 400px;
+            width: 900px;        
         }
 
     </style>
 </head>
 
 <body>
-     <div class="navbar">
+    <div class="navbar">
         <h1>Seja bem vindo ao Cãonectado</h1>
         <div class="navegacao"><a href="quemSomos.html">Home</a></div>
         <div class="navegacao"><a href="index.html">Raças</a></div>
@@ -82,6 +74,9 @@
             repassar algumas informações sobre os cuidados necessarios,
             quais são as doenças mais normais, dentre outros!!!<br>
         </p>
+    </div>
+    <div class="banner">
+        <img src="https://png.pngtree.com/png-clipart/20241110/original/pngtree-group-of-dogs-sitting-together-in-a-row-png-image_16810673.png" alt="">
     </div>
     <div class="contexto"> <!--container dos mitos e fatos -->
 
@@ -145,6 +140,15 @@
         </p>
     </div>
     </div>
+    <footer id="rodape">
+        <H2>INFORMAÇÕES DO SITE</H2>
+        <h3>
+            DESENVOLVIDO POR : Isaac de Oliveira Sousa<br>
+            INSTAGRAM: sousa.gk77<br>
+            TELEFONE: +55(88) 99949-4125
+        </h3>
+
+    </footer>
 </body>
 
 </html>

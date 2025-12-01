@@ -8,12 +8,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
         integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
     <link rel="stylesheet" href="style.css">
     <script src="scripty.js"></script>
     <style>
-        h1 {
+        #text {
             font-size: 2.5em;
             text-transform: uppercase;
 
@@ -27,8 +25,12 @@
             gap: 40px;
         }
 
-        #primeira>h1 {
+        #primeira>#text {
             margin-left: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 600px;
         }
 
         .item {
@@ -43,6 +45,9 @@
             padding: 30px;
             line-height: 1.4em;
             text-align: justify;
+            margin-top: 40px;
+            border: 2px solid;
+            background-image: linear-gradient(black, rgb(0, 115, 255))
         }
 
         .pets {
@@ -52,7 +57,6 @@
             gap: 20px;
             height: 100%;
             flex-wrap: wrap;
-            background-image: linear-gradient(black, rgb(0, 174, 255));
         }
 
         .item img {
@@ -99,7 +103,8 @@
         .rotated {
             transform: rotate(180deg);
         }
-        p{
+
+        .dp {
             color: white;
         }
     </style>
@@ -116,9 +121,8 @@
         <div class="navegacao"><a href="inspiracoes.html">inspirações</a></div>
     </div>
     <section id="primeira">
-        <h1>pet's infor 1</h1>
+        <h1 id="text">pet's infor 1</h1>
         <div class="pets">
-
             <div class="item">
                 <img src="imagens/Aquiles.jpg" alt="">
                 <div class="fotos">
@@ -128,7 +132,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Felipe Ryan <br>
                         Porte: Medio/Grande
                     </p>
@@ -143,7 +147,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Dafny Vitoria <br>
                         Porte: Medio
                     </p>
@@ -158,7 +162,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Arthur Nogueira <br>
                         Porte: Pequeno
                     </p>
@@ -173,7 +177,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Isaac Oliveira <br>
                         Porte: Medio/Grande
                     </p>
@@ -188,7 +192,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Guilherme Vitor <br>
                         Porte: Medio
                     </p>
@@ -203,7 +207,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Wilson Neto <br>
                         Porte: Medio
                     </p>
@@ -218,7 +222,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Ivens Araujo<br>
                         Porte: Medio/Grande
                     </p>
@@ -233,7 +237,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Luna Costa <br>
                         Porte: Pequeno
                     </p>
@@ -248,7 +252,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Luna Costa <br>
                         Porte: Pequeno
                     </p>
@@ -263,7 +267,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Luna Costa <br>
                         Porte: Pequeno
                     </p>
@@ -278,7 +282,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Luna Costa <br>
                         Porte: Pequeno
                     </p>
@@ -293,7 +297,7 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
+                    <p class="dp">
                         Dono(a): Luna Costa <br>
                         Porte: Pequeno
                     </p>
@@ -308,16 +312,25 @@
                     </button>
                 </div>
                 <div class="infor">
-                    <p>
-                        Dono(a): <br>
+                    <p class="dp">
+                        Dono(a): Gabriel Henrique <br>
                         Porte: Pequeno <br>
-                        Gato Branco: Marley <br>
-                        Gato Preto: Else <br>
+                        Gato Branco: Marley (Macho) <br>
+                        Gato Preto: Else (Femea) <br>
                     </p>
                 </div>
             </div>
         </div>
     </section>
+    <footer id="rodape">
+        <H2>INFORMAÇÕES DO SITE</H2>
+        <h3>
+            DESENVOLVIDO POR : Isaac de Oliveira Sousa<br>
+            INSTAGRAM: sousa.gk77<br>
+            TELEFONE: +55(88) 99949-4125
+        </h3>
+
+    </footer>
 
 
 
