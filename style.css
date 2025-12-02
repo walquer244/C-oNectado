@@ -131,18 +131,30 @@ footer p {
     align-items: center;
     text-align: center;
     gap: 10px;
-
 }
 
-.contexto>h2 {
-    flex-direction: column;
+
+.mitos {
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 22px 0px 3px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    width: 500px;
+    margin-left: 600px;
+    padding: 22px;
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
+    border-radius: 20px;
+    background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 115, 255));
+    color: rgb(193, 193, 209);
 }
 
-.contexto>p {
-    font-size: 22px;
+.banner>img {
+    display: flex;
+    justify-content: center;
+    height: 700px;
+    margin-left: 400px;
+    width: 900px;
 }
 
 /* ----------------------COMEÇO RAÇAS--------------------------- */
